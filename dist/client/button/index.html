@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en" class="h-full"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>RR7 MDX</title><meta name="description" content="Testing out React Router 7 and mdx"/><link rel="stylesheet" href="/assets/root-DFwcxlof.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/></head><body class="flex min-h-full antialiased text-slate-900"><div class="w-full"><div class="h-full lg:ml-72 xl:ml-80"><header class="contents lg:pointer-events-none lg:fixed lg:inset-0 lg:z-40 lg:flex"><div class="contents lg:pointer-events-auto lg:block lg:w-72 lg:overflow-y-auto lg:border-r lg:border-slate-900/10 lg:px-6 lg:pb-8 lg:pt-4 xl:w-80"><div class="hidden lg:flex"><a class="text-xl font-extrabold" href="/" data-discover="true">MDXDocs</a></div><div class="fixed inset-x-0 top-0 z-50 flex h-14 items-center justify-between gap-12 px-4 transition sm:px-6 lg:left-72 lg:z-30 lg:px-8 xl:left-80 backdrop-blur-lg bg-white/85 "><div class="hidden lg:block lg:max-w-sm lg:flex-auto"><button class="hidden h-8 w-full items-center gap-2 rounded bg-white pl-2 pr-3 text-sm text-zinc-500 ring-1 ring-slate-900/10 transition hover:ring-zinc-900/20 ui-not-focus-visible:outline-none lg:flex dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20">Search ...<kbd class="ml-auto text-2xs text-zinc-400 dark:text-zinc-500"><kbd class="font-sans">⌘</kbd><kbd class="font-sans">K</kbd></kbd></button></div><div class="absolute inset-x-0 top-full h-px transition bg-slate-500/20 dark:bg-white/7.5"></div></div><nav class="hidden lg:mt-10 lg:block"><ul><li class="relative mt-8"><h2 class="text-xs font-semibold text-slate-900">Guides</h2><ul class="mt-3"><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/" data-discover="true"><span class="truncate">Introduction</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/mdx-sample" data-discover="true"><span class="truncate">Markdown and MDX</span></a></li></ul></li><li class="relative mt-8"><h2 class="text-xs font-semibold text-slate-900">Components</h2><ul class="mt-3"><li class="relative"><a aria-current="page" class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-900 font-semibold bg-slate-100 " href="/button" data-discover="true"><span class="truncate">Button</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li></ul></li><li class="relative mt-8"><h2 class="text-xs font-semibold text-slate-900">Section Heading</h2><ul class="mt-3"><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li><li class="relative"><a class="flex justify-between gap-2 py-2 px-3 -ml-3 text-sm transition rounded-md text-slate-600 hover:text-slate-900" href="/foo" data-discover="true"><span class="truncate">Another Link</span></a></li></ul></li></ul></nav></div></header><div class="relative flex h-full flex-col px-4 pt-14 sm:px-6 lg:px-8"><main class="flex-auto"><article class="flex h-full flex-col pb-10 pt-16"><div class="prose prose-slate max-w-screen-md"><h1>Button</h1>
+<!-- -->A button allows a user to perform an action, with mouse, touch, and keyboard interactions.<!-- -->
+<h2>Example</h2>
+<!-- -->
+<div class="not-prose rounded-lg bg-slate-50 p-1"><div class="not-prose p-5 text-sm overflow-x-auto bg-slate-50"><figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="tsx" data-theme="one-light"><code data-language="tsx" data-theme="one-light" style="display:grid"><span data-line=""><span style="color:#A626A4">import</span><span style="color:#383A42"> { </span><span style="color:#E45649">Button</span><span style="color:#383A42"> } </span><span style="color:#A626A4">from</span><span style="color:#50A14F"> &quot;sarsaparilla&quot;</span><span style="color:#383A42">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="color:#A626A4">function</span><span style="color:#4078F2"> Example</span><span style="color:#383A42">() {</span></span>
+<span data-line=""><span style="color:#A626A4">  return</span><span style="color:#383A42"> (</span></span>
+<span data-line=""><span style="color:#383A42">    &lt;</span><span style="color:#C18401">Button</span></span>
+<span data-line=""><span style="color:#986801">      onPress</span><span style="color:#383A42">={() </span><span style="color:#A626A4">=&gt;</span><span style="color:#383A42"> { </span><span style="color:#E45649">console</span><span style="color:#383A42">.</span><span style="color:#4078F2">log</span><span style="color:#383A42">(</span><span style="color:#50A14F">&#x27;I was pressed&#x27;</span><span style="color:#383A42">)}}</span></span>
+<span data-line=""><span style="color:#383A42">    &gt;</span></span>
+<span data-line=""><span style="color:#383A42">      Click me</span></span>
+<span data-line=""><span style="color:#383A42">    &lt;/</span><span style="color:#C18401">Button</span><span style="color:#383A42">&gt;</span></span>
+<span data-line=""><span style="color:#383A42">  );</span></span>
+<span data-line=""><span style="color:#383A42">}</span></span></code></pre></figure></div><div class="not-prose bg-white rounded-lg m-1 p-5 shadow shadow-slate-500/10"><button type="button" class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm border border-slate-300  hover:bg-slate-50 outline-none">Click me</button></div></div></div></article></main></div></div></div><script>((storageKey, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey);
+    }
+  })("react-router-scroll-positions", null)</script><link rel="modulepreload" href="/assets/entry.client-B6rAJ0e4.js"/><link rel="modulepreload" href="/assets/index-BiH3ohOA.js"/><link rel="modulepreload" href="/assets/with-props-DX0XJwQf.js"/><link rel="modulepreload" href="/assets/root-B0UuCrkS.js"/><link rel="modulepreload" href="/assets/clsx-B-dksMZM.js"/><link rel="modulepreload" href="/assets/layout-ujK3O9Bc.js"/><link rel="modulepreload" href="/assets/mdx-layout-CIuMtuoF.js"/><link rel="modulepreload" href="/assets/button-CWAFSIa-.js"/><link rel="modulepreload" href="/assets/Button-DULGgTeI.js"/><link rel="modulepreload" href="/assets/button-DTUWbfSA.js"/><script>window.__reactRouterContext = {"basename":"/","future":{},"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-B0UuCrkS.js";
+import * as route1 from "/assets/layout-ujK3O9Bc.js";
+import * as route2 from "/assets/mdx-layout-CIuMtuoF.js";
+import * as route3 from "/assets/button-DTUWbfSA.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-B6rAJ0e4.js",
+    "imports": [
+      "/assets/index-BiH3ohOA.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/root-B0UuCrkS.js",
+      "imports": [
+        "/assets/index-BiH3ohOA.js",
+        "/assets/with-props-DX0XJwQf.js"
+      ],
+      "css": [
+        "/assets/root-DFwcxlof.css"
+      ]
+    },
+    "routes/layout": {
+      "id": "routes/layout",
+      "parentId": "root",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/layout-ujK3O9Bc.js",
+      "imports": [
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js",
+        "/assets/clsx-B-dksMZM.js"
+      ],
+      "css": []
+    },
+    "routes/mdx-layout": {
+      "id": "routes/mdx-layout",
+      "parentId": "routes/layout",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/mdx-layout-CIuMtuoF.js",
+      "imports": [
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js"
+      ],
+      "css": []
+    },
+    "mdx/button": {
+      "id": "mdx/button",
+      "parentId": "routes/mdx-layout",
+      "path": "button",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/button-DTUWbfSA.js",
+      "imports": [
+        "/assets/button-CWAFSIa-.js",
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js",
+        "/assets/Button-DULGgTeI.js",
+        "/assets/clsx-B-dksMZM.js"
+      ],
+      "css": []
+    },
+    "routes/introduction": {
+      "id": "routes/introduction",
+      "parentId": "routes/layout",
+      "index": true,
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/introduction-DCVgVu7m.js",
+      "imports": [
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js",
+        "/assets/button-CWAFSIa-.js",
+        "/assets/mdx-sample-N5cLg5KW.js",
+        "/assets/Button-DULGgTeI.js",
+        "/assets/clsx-B-dksMZM.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-23af6938.js",
+  "version": "23af6938"
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/layout":route1,"routes/mdx-layout":route2,"mdx/button":route3};
+
+import("/assets/entry.client-B6rAJ0e4.js");</script></body></html><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_7\":-5,\"_8\":-5},\"loaderData\",{\"_3\":-5,\"_4\":-5,\"_5\":-5,\"_6\":-5},\"root\",\"routes/layout\",\"routes/mdx-layout\",\"mdx/button\",\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>function $RC(a,b){a=document.getElementById(a);b=document.getElementById(b);b.parentNode.removeChild(b);if(a){a=a.previousSibling;var f=a.parentNode,c=a.nextSibling,e=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d)if(0===e)break;else e--;else"$"!==d&&"$?"!==d&&"$!"!==d||e++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;b.firstChild;)f.insertBefore(b.firstChild,c);a.data="$";a._reactRetry&&a._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script>

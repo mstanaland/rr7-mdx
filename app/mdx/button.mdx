@@ -1,0 +1,35 @@
+---
+title: Button
+description: Allows a user to perform an action, with mouse, touch, and keyboard interactions.
+published: 2024-09-29
+---
+
+# {frontmatter.title}
+
+{frontmatter.description}
+
+## Example
+import {DocsExample, DocsCode, DocsResult} from "../components/DocsExample.tsx";
+import {Button} from "../components/button.tsx";
+
+<DocsExample>
+  <DocsCode>
+  ```tsx
+  import { Button } from "sarsaparilla";
+
+  function Example() {
+    return (
+      <Button
+        onPress={() => { console.log('I was pressed')}}
+      >
+        Click me
+      </Button>
+    );
+  }
+  ```
+  </DocsCode>
+
+  <DocsResult>
+    <Button>Click me</Button>
+  </DocsResult>
+</DocsExample>

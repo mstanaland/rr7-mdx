@@ -1,0 +1,102 @@
+---
+title: Markdown and MDX
+description: Demo of Markdown syntax and React components in MDX
+published: 2024-09-29
+---
+
+# {frontmatter.title}
+
+This is an MDX test page that showcases various MDX elements and code blocks.
+
+This site uses [Vite][vite] and [Remark][remark] plugins that let you write MDX routes in your Remix app.
+These MDX routes are transformed to JS at build-time.
+
+Server-side utilities query the frontmatter of each MDX file so that pages can display lists of posts.
+
+
+## MDX
+
+Let's try using a component!
+
+import { Counter } from "../components/counter.tsx";
+
+<Counter />
+
+## Headings
+
+### Level 3 Heading
+
+#### Level 4 Heading
+
+##### Level 5 Heading
+
+###### Level 6 Heading
+
+## Paragraphs
+
+This is a paragraph. Sanderson wrote consistently throughout his undergraduate and graduate studies; by 2003, he had written twelve novels, though no publisher had accepted any of them for publication. While in the middle of a graduate program at BYU, he was contacted by Tor Books editor Frank Smith, who wanted to acquire one of his books..
+
+He published the second book of the Mistborn series The Well of Ascension in 2007. Later that year, Sanderson published the children's novel Alcatraz Versus the Evil Librarians, about a boy named Alcatraz with a talent for breaking things. Alcatraz confronts a group of evil librarians who are bent on taking over the world. 
+
+## Lists
+
+### Unordered List
+
+- Item 1
+- Item 2
+- Item 3
+
+### Ordered List
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+## Images
+
+![Alt text](/logo-light.png "Optional title")
+
+## Links
+
+[Link text](https://example.com)
+
+## Blockquote
+
+> Like most intellectuals, he is exceedingly stupid.
+
+## Horizontal Rule
+
+---
+
+## Code Blocks
+
+### Inline Code
+
+This is an example of `inline code`.
+
+### Fenced Code Blocks
+
+<div className="not-prose">
+```tsx
+import { useState } from "react";
+
+export const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div className="text-black flex gap-4 items-center">
+      <button
+        className="py-1 px-2 text-white bg-cyan-700 rounded"
+        onClick={() => setCount(count + 1)}
+      >
+        Increment
+      </button>
+      <p>Count: {count}</p>
+    </div>
+  );
+};
+```
+</div>
+
+[vite]: https://vitejs.dev/
+[remark]: https://github.com/remarkjs/remark

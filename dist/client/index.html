@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en" class="h-full"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>RR7 MDX</title><meta name="description" content="Testing out React Router 7 and mdx"/><link rel="stylesheet" href="/assets/root-DFwcxlof.css"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap"/></head><body class="flex min-h-full antialiased text-slate-900"><div>Loading...</div><script>((storageKey, restoreKey) => {
+    if (!window.history.state || !window.history.state.key) {
+      let key = Math.random().toString(32).slice(2);
+      window.history.replaceState({
+        key
+      }, "");
+    }
+    try {
+      let positions = JSON.parse(sessionStorage.getItem(storageKey) || "{}");
+      let storedY = positions[restoreKey || window.history.state.key];
+      if (typeof storedY === "number") {
+        window.scrollTo(0, storedY);
+      }
+    } catch (error) {
+      console.error(error);
+      sessionStorage.removeItem(storageKey);
+    }
+  })("react-router-scroll-positions", null)</script><link rel="modulepreload" href="/assets/entry.client-B6rAJ0e4.js"/><link rel="modulepreload" href="/assets/index-BiH3ohOA.js"/><link rel="modulepreload" href="/assets/with-props-DX0XJwQf.js"/><link rel="modulepreload" href="/assets/root-B0UuCrkS.js"/><link rel="modulepreload" href="/assets/clsx-B-dksMZM.js"/><link rel="modulepreload" href="/assets/layout-ujK3O9Bc.js"/><link rel="modulepreload" href="/assets/button-CWAFSIa-.js"/><link rel="modulepreload" href="/assets/mdx-sample-N5cLg5KW.js"/><link rel="modulepreload" href="/assets/Button-DULGgTeI.js"/><link rel="modulepreload" href="/assets/introduction-DCVgVu7m.js"/><script>window.__reactRouterContext = {"basename":"/","future":{},"isSpaMode":false};window.__reactRouterContext.stream = new ReadableStream({start(controller){window.__reactRouterContext.streamController = controller;}}).pipeThrough(new TextEncoderStream());</script><script type="module" async="">;
+import * as route0 from "/assets/root-B0UuCrkS.js";
+import * as route1 from "/assets/layout-ujK3O9Bc.js";
+import * as route2 from "/assets/introduction-DCVgVu7m.js";
+  window.__reactRouterManifest = {
+  "entry": {
+    "module": "/assets/entry.client-B6rAJ0e4.js",
+    "imports": [
+      "/assets/index-BiH3ohOA.js"
+    ],
+    "css": []
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/root-B0UuCrkS.js",
+      "imports": [
+        "/assets/index-BiH3ohOA.js",
+        "/assets/with-props-DX0XJwQf.js"
+      ],
+      "css": [
+        "/assets/root-DFwcxlof.css"
+      ]
+    },
+    "routes/layout": {
+      "id": "routes/layout",
+      "parentId": "root",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": false,
+      "hasErrorBoundary": false,
+      "module": "/assets/layout-ujK3O9Bc.js",
+      "imports": [
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js",
+        "/assets/clsx-B-dksMZM.js"
+      ],
+      "css": []
+    },
+    "routes/introduction": {
+      "id": "routes/introduction",
+      "parentId": "routes/layout",
+      "index": true,
+      "hasAction": false,
+      "hasLoader": false,
+      "hasClientAction": false,
+      "hasClientLoader": true,
+      "hasErrorBoundary": false,
+      "module": "/assets/introduction-DCVgVu7m.js",
+      "imports": [
+        "/assets/with-props-DX0XJwQf.js",
+        "/assets/index-BiH3ohOA.js",
+        "/assets/button-CWAFSIa-.js",
+        "/assets/mdx-sample-N5cLg5KW.js",
+        "/assets/Button-DULGgTeI.js",
+        "/assets/clsx-B-dksMZM.js"
+      ],
+      "css": []
+    }
+  },
+  "url": "/assets/manifest-23af6938.js",
+  "version": "23af6938"
+};
+  window.__reactRouterRouteModules = {"root":route0,"routes/layout":route1,"routes/introduction":route2};
+
+import("/assets/entry.client-B6rAJ0e4.js");</script></body></html><!--$?--><template id="B:0"></template><!--/$--><div hidden id="S:0"><script>window.__reactRouterContext.streamController.enqueue("[{\"_1\":2,\"_6\":-5,\"_7\":-5},\"loaderData\",{\"_3\":-5,\"_4\":-5,\"_5\":-5},\"root\",\"routes/layout\",\"routes/introduction\",\"actionData\",\"errors\"]\n");</script><!--$?--><template id="B:1"></template><!--/$--></div><script>function $RC(a,b){a=document.getElementById(a);b=document.getElementById(b);b.parentNode.removeChild(b);if(a){a=a.previousSibling;var f=a.parentNode,c=a.nextSibling,e=0;do{if(c&&8===c.nodeType){var d=c.data;if("/$"===d)if(0===e)break;else e--;else"$"!==d&&"$?"!==d&&"$!"!==d||e++}d=c.nextSibling;f.removeChild(c);c=d}while(c);for(;b.firstChild;)f.insertBefore(b.firstChild,c);a.data="$";a._reactRetry&&a._reactRetry()}};$RC("B:0","S:0")</script><div hidden id="S:1"><script>window.__reactRouterContext.streamController.close();</script></div><script>$RC("B:1","S:1")</script>

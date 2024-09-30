@@ -1,0 +1,1 @@
+import{w as t}from"./with-props-DX0XJwQf.js";import{j as s,O as o}from"./index-BiH3ohOA.js";const m=t(function(){return s.jsx("div",{className:"prose prose-slate max-w-screen-md",children:s.jsx(o,{})})});export{m as default};
